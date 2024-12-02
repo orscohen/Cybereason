@@ -1,10 +1,12 @@
-<table>
-  <tr>
-    <td><img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="100"></td>
-    <td style="text-align: center; font-size: 24px; font-weight: bold;">Unofficial Cybereason Channel</td>
-    <td><img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="100"></td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; height: 100vh;">
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="80">
+    <h1 style="margin: 0 20px; font-size: 36px; font-weight: bold;">Unofficial Cybereason Channel</h1>
+    <img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="80">
+  </div>
+</div>
+
+
 Welcome to the **Unofficial Cybereason GitHub Repository**, a personal initiative by a Cybereason Solution Engineer (SE) to assist customers and prospects with resources, scripts, and tools for maximizing their experience with the Cybereason Defense Platform.
 
 ---
