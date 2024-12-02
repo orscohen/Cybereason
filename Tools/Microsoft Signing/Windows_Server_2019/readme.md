@@ -25,11 +25,11 @@ This guide provides step-by-step instructions for installing Cybereason version 
 
 1. **Check and Install Servicing Stack Update (SSU):**
    - Ensure the **August 10, 2021 SSU (KB5005112)** is installed.  
-     Download and install it from [KB5005112](https://support.microsoft.com/en-us/topic/august-10-2021-kb5005112-servicing-stack-update-for-windows-10-version-1809-and-windows-server-2019-d019c84d-03c5-472c-9917-06b3375448ed).
+     Download and install it from [KB5005112](https://catalog.s.download.windowsupdate.com/d/msdownload/update/software/secu/2021/08/windows10.0-kb5005112-x64_81d09dc6978520e1a6d44b3b15567667f83eba2c.msu).
 
 2. **Install Latest Cumulative Update (LCU):**
    - Install the **September 21, 2021 (KB5005625)** LCU to upgrade your build to `17763.2210`.
-     - Download from [KB5005625](https://support.microsoft.com/en-us/topic/september-21-2021-kb5005625-os-build-17763-2210-preview-5ae2f63d-a9ce-49dd-a5e6-e05b90dc1cd8).
+     - Download from [KB5005625](https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/updt/2021/09/windows10.0-kb5005625-x64_9a7d6abe389d940e08d759243c981670c33c71f5.msu).
 
 ---
 
