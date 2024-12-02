@@ -1,6 +1,6 @@
 # **Unofficial Cybereason Channel**
 
-![Cybereason Logo](https://upload.wikimedia.org/wikipedia/en/1/1b/Cybereason_logo.png)
+![Cybereason Logo](https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png)
 
 Welcome to the **Unofficial Cybereason GitHub Repository**, a personal initiative by a Cybereason Solution Engineer (SE) to assist customers and prospects with resources, scripts, and tools for maximizing their experience with the Cybereason Defense Platform.
 
@@ -46,7 +46,7 @@ Contributions are welcome! If you'd like to improve the repository:
 If you have questions or need additional help:
 
 - **Email:** [or.cohen@cybereason.com](mailto:or.cohen@cybereason.com)
-- **LinkedIn:** [OrSCohen]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/orscohen/))
+- **LinkedIn:** [OrSCohen](https://www.linkedin.com/in/orscohen/)
 
 ---
 
