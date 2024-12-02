@@ -46,7 +46,7 @@ This guide provides step-by-step instructions for installing Cybereason version 
      - [Microsoft Identity Verification Root Certificate Authority 2020](https://www.microsoft.com/pkiops/certs/microsoft%20identity%20verification%20root%20certificate%20authority%202020.crt)
 
 2. **Install Missing Certificates:**
-   - Use the provided `.bat` script (attached to this repository) to automate certificate installation:
+   - Use the provided `install_certs.ps1` script (attached to this repository) to automate certificate installation:
      ```batch
      certutil -addstore "Root" "<certificate_path>"
      ```
