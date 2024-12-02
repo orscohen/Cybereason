@@ -1,7 +1,6 @@
-<div style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100vh;">
+<div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="80">
   <h1 style="margin: 0 20px; font-size: 36px; font-weight: bold;">Unofficial Cybereason Channel</h1>
-  <img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="80">
 </div>
 
 
