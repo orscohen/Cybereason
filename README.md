@@ -1,7 +1,10 @@
-# **Unofficial Cybereason Channel**
-
-![Cybereason Logo](https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png)
-
+<table>
+  <tr>
+    <td><img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="100"></td>
+    <td style="text-align: center; font-size: 24px; font-weight: bold;">Unofficial Cybereason Channel</td>
+    <td><img src="https://www.cybereason.com/hubfs/Cybereason%20Logos/Cybereason%20Logo-1.png" alt="Cybereason Logo" width="100"></td>
+  </tr>
+</table>
 Welcome to the **Unofficial Cybereason GitHub Repository**, a personal initiative by a Cybereason Solution Engineer (SE) to assist customers and prospects with resources, scripts, and tools for maximizing their experience with the Cybereason Defense Platform.
 
 ---
