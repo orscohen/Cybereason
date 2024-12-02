@@ -10,6 +10,11 @@
 #\___/ |_|    \____/\___/|_| |_|\___|_| |_|     |
 #***********************************************
 
+##Please review "Deploy and Distribute Cybereason Sensors using JAMF MDM"|| https://nest.cybereason.com/knowledgebase/7745196
+## MDM mobileconfig file: https://nest.cybereason.com/system/files/resource-documents/2023-03/Cybereason_Sensor_Policy%20%283%29.mobileconfig
+##Make sure the MDM mobile config profile is deployed before the Script deployment.
+
+
 # Set the path to the .pkg file and the required directory for installation
 PACKAGE_PATH="/path/to/your/CybereasonInstall.pkg"
 LOG_FILE="/var/log/cybereason_install.log"
