@@ -50,6 +50,11 @@ This guide provides step-by-step instructions for installing Cybereason version 
      certutil -addstore "Root" "<certificate_path>"
      ```
    - Replace `<certificate_path>` with the location of the downloaded `.cer` files.
+  
+   - Or use the added script: 
+     ```
+     powershell.exe -ExecutionPolicy Bypass -File ./install_certs.ps1
+     ```
 
 ---
 
