@@ -43,6 +43,7 @@ This guide provides step-by-step instructions for installing Cybereason version 
    - If any are missing, download them from:
      - [DigiCert Trusted Root Authority Certificates](https://www.digicert.com/kb/digicert-root-certificates.htm)
      - [Sectigo Root & Intermediate Certificates](https://support.sectigo.com/articles/Knowledge/Sectigo-Intermediate-Certificates)
+     - [Microsoft Identity Verification Root Certificate Authority 2020]([https://support.sectigo.com/articles/Knowledge/Sectigo-Intermediate-Certificates](https://www.microsoft.com/pkiops/certs/microsoft%20identity%20verification%20root%20certificate%20authority%202020.crt))
 
 2. **Install Missing Certificates:**
    - Use the provided `.bat` script (attached to this repository) to automate certificate installation:
