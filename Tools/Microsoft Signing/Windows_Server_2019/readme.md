@@ -21,7 +21,7 @@ This guide provides step-by-step instructions for installing Cybereason version 
 
 ---
 
-## **Step 1: Updating Windows OS Build**
+## **Step 1: Updating Windows OS Build - only if below 17763.2210**
 
 1. **Check and Install Servicing Stack Update (SSU):**
    - Ensure the **August 10, 2021 SSU (KB5005112)** is installed.  
@@ -63,7 +63,7 @@ This guide provides step-by-step instructions for installing Cybereason version 
 ## **Troubleshooting**
 
 - Ensure all prerequisites are met before starting the Cybereason installation.  
-- If issues persist, refer to the [Cybereason Knowledge Base](https://www.cybereason.com) for additional support.
+- If issues persist, refer to the [Cybereason Knowledge Base](https://www.nest.cybereason.com) for additional support.
 
 ---
 
