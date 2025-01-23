@@ -1,4 +1,4 @@
-# SFTP Download Automation Scripts
+# LTI weekly Download Automation Scripts
 
 ## Overview
 This repository contains two Bash scripts for automating SFTP downloads with different authentication methods.
