@@ -1,17 +1,7 @@
 #!/bin/bash
 
-#Configure Pass https://www.redhat.com/en/blog/management-password-store
 #Get the REMOTE_DIR folder name , User & Password and IP from the TAM/SE
-#Configure them with the following commands : 
-#sudo dnf install pass | sudo yum install pass
-#Follow the instructions in the above link and configure the following:
-#pass insert sftp/user
-#pass insert sftp/password
-#pass insert sftp/host
-
 #At the end of the script you will get $latest_json file , which can be used as you wish
-
-
 
 # Configuration
 SFTP_HOST=$(pass sftp/host)  # Added host retrieval from pass
