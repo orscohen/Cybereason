@@ -27,7 +27,7 @@ sudo apt install sshpass pass
 ### Script Configuration
 1. Create the script:
 ```bash
-הן FTP_LTI_Pass_plain.sh
+vi FTP_LTI_Pass_plain.sh
 chmod +x FTP_LTI_Pass_plain.sh
 ```
 
