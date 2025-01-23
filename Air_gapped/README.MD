@@ -83,9 +83,14 @@ gpg --list-keys
 
 4. Store SFTP Credentials:
 ```bash
-pass insert sftp/host
-pass insert sftp/user
-pass insert sftp/password
+# Insert SFTP host details
+pass insert sftp/host <<< "sftp.example.com"
+
+# Insert SFTP username
+pass insert sftp/user <<< "your_username"
+
+# Insert SFTP password
+pass insert sftp/password <<< "your_secure_password"
 ```
 
 ### Script Configuration
