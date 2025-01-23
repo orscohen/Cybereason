@@ -76,11 +76,11 @@ EOF
 ```
 # List the gpg keys to verify
 ```bash
-# List keys to verify
+3. List keys to verify
 gpg --list-keys
 ```
 
-3. Store SFTP Credentials:
+4. Store SFTP Credentials:
 ```bash
 pass insert sftp/host
 pass insert sftp/user
