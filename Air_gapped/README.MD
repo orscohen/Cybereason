@@ -76,7 +76,9 @@ EOF
 ```
 # List the gpg keys to verify
 ```bash
+
 3. List keys to verify
+
 gpg --list-keys
 ```
 
