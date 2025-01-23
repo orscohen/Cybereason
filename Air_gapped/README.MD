@@ -88,6 +88,39 @@ chmod +x FTP_LTI_Pass_addon.sh
 ./FTP_LTI_Pass_addon.sh
 ```
 
+## Cron Job Configuration
+
+### Weekly Monday Schedule at 9 AM
+
+```bash
+# Open crontab editor
+crontab -e
+
+# Add this line for plain password script
+0 9 * * 1 /path/to/FTP_LTI_Pass_plain.sh
+
+# Or for pass manager script
+0 9 * * 1 /path/to/FTP_LTI_Pass_addon.sh
+```
+
+### Cron Syntax Breakdown
+- `0` = Minute (0-59)
+- `9` = Hour (0-23)
+- `*` = Day of month (1-31)
+- `*` = Month (1-12)
+- `1` = Day of week (0-7, where 1 = Monday)
+
+### Verification
+```bash
+# List current scheduled jobs
+crontab -l
+```
+
+### Recommended Logging
+```bash
+0 9 * * 1 /path/to/script.sh >> /var/log/sftp_download.log 2>&1
+```
+
 ## Best Practices
 - Avoid storing passwords in plain text
 - Implement proper access controls
