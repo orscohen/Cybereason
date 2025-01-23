@@ -53,20 +53,29 @@ DEBUG=1
 ./FTP_LTI_Pass_plain.sh
 ```
 
-## 2. Secure Password Manager Script: `FTP_LTI_Pass_addon.sh`
+## 2. Secure Password Manager Script: `FTP_LTI_Pass_Secured.sh`
 
 ### Password Manager Setup
+## Non-Interactive GPG Key for Automation
 
-1. Generate GPG Key (if not already done):
-```bash
-gpg --full-generate-key
-```
+### Creating a Non-Interactive GPG Key
 
-2. Initialize Password Store:
 ```bash
-# Use the email from your GPG key
-pass init your_gpg_email@example.com
-```
+# Generate non-interactive GPG key
+gpg --batch --gen-key <<EOF
+Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: RSA
+Subkey-Length: 4096
+Name-Real: Automation User
+Name-Email: automation@example.com
+Expire-Date: 0
+%no-protection
+%commit
+EOF
+
+# List keys to verify
+gpg --list-keys
 
 3. Store SFTP Credentials:
 ```bash
@@ -78,14 +87,14 @@ pass insert sftp/password
 ### Script Configuration
 Create the script:
 ```bash
-vi FTP_LTI_Pass_addon.sh
-chmod +x FTP_LTI_Pass_addon.sh
+vi FTP_LTI_Pass_Secured.sh
+chmod +x FTP_LTI_Pass_Secured.sh
 ```
 
 
 ### Execution
 ```bash
-./FTP_LTI_Pass_addon.sh
+./FTP_LTI_Pass_Secured.sh
 ```
 
 ## Cron Job Configuration
@@ -100,7 +109,7 @@ crontab -e
 0 9 * * 1 /path/to/FTP_LTI_Pass_plain.sh
 
 # Or for pass manager script
-0 9 * * 1 /path/to/FTP_LTI_Pass_addon.sh
+0 9 * * 1 /path/to/FTP_LTI_Pass_Secured.sh
 ```
 
 ### Cron Syntax Breakdown
