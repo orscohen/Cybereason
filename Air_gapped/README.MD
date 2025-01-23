@@ -74,11 +74,10 @@ Expire-Date: 0
 %commit
 EOF
 ```
-# List the gpg keys to verify
+3.List the gpg keys to verify
+
 ```bash
-
-3. List keys to verify
-
+#List keys to verify
 gpg --list-keys
 ```
 
