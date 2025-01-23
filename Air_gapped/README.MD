@@ -73,9 +73,11 @@ Expire-Date: 0
 %no-protection
 %commit
 EOF
-
+```
+```bash
 # List keys to verify
 gpg --list-keys
+```
 
 3. Store SFTP Credentials:
 ```bash
