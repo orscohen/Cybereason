@@ -143,7 +143,7 @@ crontab -l
 # Add to /etc/rsyslog.d/sftp-script.conf
 local0.* /var/log/sftp_downloads.log
 
-# Restart rsyslog
+## Restart rsyslog
 sudo systemctl restart rsyslog
 ```
 ## Viewing Logs
@@ -151,7 +151,7 @@ sudo systemctl restart rsyslog
 # View script-specific logs
 sudo journalctl -t FTP_LTI_Pass_Secured.sh
 
-# View detailed system logs
+## View detailed system logs
 sudo grep local0 /var/log/syslog
 ```
 
