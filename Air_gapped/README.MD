@@ -145,7 +145,7 @@ crontab -l
 - Regularly rotate credentials
 
 ## Troubleshooting
-- Use Dbuug mode to identify the issue:
+- Use Debug mode to identify the issue:
 ```bash
 # Debug Mode (1 for verbose, 0 for quiet) Change DEBUG=0 to:
 DEBUG=1
