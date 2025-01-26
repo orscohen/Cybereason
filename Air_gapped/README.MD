@@ -146,6 +146,10 @@ crontab -l
 
 ## Troubleshooting
 - Verify all paths are correct
+```bash
+# Debug Mode (1 for verbose, 0 for quiet)
+DEBUG=1
+```
 - Check network connectivity
 - Validate SFTP server credentials
 - Ensure script permissions are set correctly
