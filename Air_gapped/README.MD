@@ -147,7 +147,8 @@ crontab -l
 ## Troubleshooting
 - Use Debug mode to identify the issue:
 ```bash
-# Debug Mode (1 for verbose, 0 for quiet) Change DEBUG=0 to:
+# Debug Mode (1 for verbose, 0 for quiet) 
+# Change DEBUG=0 to:
 DEBUG=1
 ```
 - Verify all paths are correct
