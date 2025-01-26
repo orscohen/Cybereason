@@ -145,11 +145,12 @@ crontab -l
 - Regularly rotate credentials
 
 ## Troubleshooting
-- Verify all paths are correct
+- Use Dbuug mode to identify the issue:
 ```bash
-# Debug Mode (1 for verbose, 0 for quiet)
+# Debug Mode (1 for verbose, 0 for quiet) Change DEBUG=0 to:
 DEBUG=1
 ```
+- Verify all paths are correct
 - Check network connectivity
 - Validate SFTP server credentials
 - Ensure script permissions are set correctly
