@@ -115,15 +115,15 @@ chmod +x FTP_LTI_Pass_Secured.sh
 crontab -e
 
 # Add this line for plain password script
-0 9 * * 1 /path/to/FTP_LTI_Pass_plain.sh
+0 10 * * 1 /path/to/FTP_LTI_Pass_plain.sh
 
 # Or for pass manager script
-0 9 * * 1 /path/to/FTP_LTI_Pass_Secured.sh
+0 10 * * 1 /path/to/FTP_LTI_Pass_Secured.sh
 ```
 
 ### Cron Syntax Breakdown
 - `0` = Minute (0-59)
-- `9` = Hour (0-23)
+- `10` = Hour (0-23)
 - `*` = Day of month (1-31)
 - `*` = Month (1-12)
 - `1` = Day of week (0-7, where 1 = Monday)
