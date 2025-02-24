@@ -19,7 +19,7 @@ sudo apt update
 sudo apt install sshpass pass
 ```
 
-## 1. Plain Password Script: `FTP_LTI_Pass_plain.sh`
+## Method (1). Plain Password Script: `FTP_LTI_Pass_plain.sh`
 
 ### ⚠️ Security Warning
 **Not Recommended for Production Use** - Storing passwords in plain text is a significant security risk.
@@ -53,7 +53,7 @@ DEBUG=1
 ./FTP_LTI_Pass_plain.sh
 ```
 
-## 2. Secure Password Manager Script: `FTP_LTI_Pass_Secured.sh`
+## Method (2). Secure Password Manager Script: `FTP_LTI_Pass_Secured.sh`
 
 ### Password Manager Setup
 ## Non-Interactive GPG Key for Automation
