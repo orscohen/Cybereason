@@ -7,7 +7,6 @@
     It verifies admin permissions, validates URLs, includes error handling, and 
     provides detailed progress feedback.
 .NOTES
-    Last Update: May 4, 2025
     Requires: PowerShell 5.1+, Administrator privileges, Internet connectivity
 #>
 
@@ -46,17 +45,6 @@ function Test-Url {
     catch {
         return $false
     }
-}
-
-# Function to display progress bar for downloads
-function Show-DownloadProgress {
-    param(
-        [string]$Activity,
-        [string]$Status,
-        [int]$PercentComplete
-    )
-    
-    Write-Progress -Activity $Activity -Status $Status -PercentComplete $PercentComplete
 }
 
 # Get installed hotfixes
@@ -120,22 +108,12 @@ foreach ($update in $updates) {
             continue
         }
         
-        # Download the MSU file
+        # Download the MSU file with progress display
         Write-Host "  Downloading $kb from Microsoft Catalog..." -ForegroundColor Yellow
         try {
-            $webClient = New-Object System.Net.WebClient
-            $webClient.Headers.Add("User-Agent", "PowerShell Script")
-            
-            # Add download progress event
-            $webClient.DownloadProgressChanged = {
-                $Activity = "Downloading $($using:kb)"
-                $Status = "Downloaded $($EventArgs.BytesReceived) of $($EventArgs.TotalBytesToReceive) bytes"
-                $PercentComplete = $EventArgs.ProgressPercentage
-                Show-DownloadProgress -Activity $Activity -Status $Status -PercentComplete $PercentComplete
-            }
-            
-            $webClient.DownloadFileTaskAsync($url, $msuPath).GetAwaiter().GetResult()
-            Write-Progress -Activity "Downloading $kb" -Status "Complete" -Completed
+            # Instead of using WebClient with events, use Invoke-WebRequest with progress
+            $ProgressPreference = 'Continue'
+            Invoke-WebRequest -Uri $url -OutFile $msuPath -UserAgent "PowerShell Script" -UseBasicParsing
             
             # Verify file was downloaded and has content
             if (Test-Path $msuPath) {
