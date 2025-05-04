@@ -26,7 +26,7 @@ $updates = @(
     },
     @{
         KB = "KB5005625"
-        Url = "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/updt/2021/09/windows10.0-kb5005625-x64_9a7d6940e08d759243c981670c33c71f5.msu"
+        Url = "https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/updt/2021/09/windows10.0-kb5005625-x64_9a7d6abe389d940e08d759243c981670c33c71f5.msu"
         Description = "September 2021 Update Preview"
     }
 )
