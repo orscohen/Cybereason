@@ -55,16 +55,19 @@ $certificates = @(
         Name = "GeoTrust RSA CA 2018"
         Url = "https://cacerts.digicert.com/GeoTrustRSACA2018.crt"
         FileName = "GeoTrustRSACA2018.crt"
+        Store = "CA"  # Intermediate certificate store
     },
     @{
         Name = "Microsoft Identity Verification Root CA 2020"
         Url = "https://www.microsoft.com/pkiops/certs/microsoft%20identity%20verification%20root%20certificate%20authority%202020.crt"
         FileName = "Microsoft_Identity_Verification_Root_CA_2020.crt"
+        Store = "Root"  # Root certificate store
     },
     @{
         Name = "DigiCert Global Root CA"
         Url = "https://cacerts.digicert.com/DigiCertGlobalRootCA.crt"
         FileName = "DigiCertGlobalRootCA.crt"
+        Store = "Root"  # Root certificate store
     }
 )
 
@@ -130,11 +133,12 @@ foreach ($cert in $certificates) {
         try {
             Write-Host "  Installing certificate: $($cert.Name)..." -ForegroundColor Yellow
             
-            # Use certutil to add the certificate to the Trusted Root store
-            $result = & certutil -addstore "Root" $certPath 2>&1
+            # Use certutil to add the certificate to the appropriate store
+            $storeType = $cert.Store
+            $result = & certutil -addstore $storeType $certPath 2>&1
             
             if ($LASTEXITCODE -eq 0) {
-                Write-Host "  Successfully installed certificate: $($cert.Name)" -ForegroundColor Green
+                Write-Host "  Successfully installed certificate: $($cert.Name) to $storeType store" -ForegroundColor Green
                 $certInstalled++
             } else {
                 Write-Host "  Failed to install certificate: $($cert.Name). certutil output: $result" -ForegroundColor Red
