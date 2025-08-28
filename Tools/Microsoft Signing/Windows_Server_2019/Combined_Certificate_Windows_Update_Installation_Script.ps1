@@ -68,6 +68,12 @@ $certificates = @(
         Url = "https://cacerts.digicert.com/DigiCertGlobalRootCA.crt"
         FileName = "DigiCertGlobalRootCA.crt"
         Store = "Root"  # Root certificate store
+    },
+    @{
+        Name = "USERTrust RSA Certification Authority"
+        Url = "https://crt.usertrust.com/USERTrustRSACertificationAuthority.crt"
+        FileName = "USERTrustRSACertificationAuthority.crt"
+        Store = "Root"  # Root certificate store
     }
 )
 
