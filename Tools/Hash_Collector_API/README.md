@@ -23,7 +23,7 @@ A professional Python tool for efficiently collecting file hashes from the Cyber
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/cybereason-hash-collector.git
+git clone https://github.com/orscohen/Cybereason/Hash_Collector_API.git
 cd cybereason-hash-collector
 ```
 
@@ -224,5 +224,6 @@ For issues and questions:
 - **v1.0.0**: Initial release with basic functionality
 
 ---
+
 
 **Made with ❤️ for the security community**
