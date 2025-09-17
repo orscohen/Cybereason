@@ -13,7 +13,7 @@ Features:
 - Comprehensive logging and error handling
 - Support for millions of hashes
 
-Author: Security Team
+Author: Or Cohen
 License: MIT
 Version: 2.0.0
 """
